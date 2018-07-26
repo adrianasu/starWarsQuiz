@@ -1,0 +1,470 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background-image: url('https://velcdn.azureedge.net/~/media/marketing/master/products/blinds/star%20wars/star%20background_1280x940.jpg?cc=grid_12_fullsection&key=key=-62135596800&sw=960');
+    padding-bottom: 5%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    -webkit-margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Changa One', cursive;
+    text-align: center;
+    color: #FFD700;
+    flex: 1;
+}
+
+p {
+    flex: 1;
+    font-size: 1.2em;
+}
+
+.start-page {
+    width: 90%;
+    margin: auto;
+}
+
+.start-page h1 {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.start-page p {
+    font-size: 1.2em;
+}
+
+.start-logo {
+    flex: 0;
+    max-width: 70%;
+    padding-top: 10%;
+}
+
+.quiz-logo {
+    flex: 1;
+    width: 35%;
+    margin: 6% auto;
+}
+
+.results-logo {
+    flex: 1;
+    max-width: 50%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.counters {
+    flex: 1;
+    color: white;
+    border: 1px solid #FFD700;
+    border-radius: 25px;
+    margin: 5% 5% 0 5%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.question-counter {
+    padding: 2% 3%;
+}
+
+.score-counter {
+    padding: 2% 3%;
+}
+
+main {
+    max-width: 95%;
+    margin: auto;
+    color: white;
+}
+
+.quiz-page, .start-page, .results-page {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hide-it {
+    display: none;
+}
+
+fieldset {
+    border: none;
+    padding-bottom: 0;
+}
+
+.results-page {
+    border: 4px solid #FFD700;
+    margin: 7%;
+}
+
+button {
+    -webkit-appearance: none;
+    border: 2px solid #FFD700;
+    font-weight: bold;
+    border-radius: 50px 20px;
+    font-family: 'Inconsolata', monospace;
+    background-color: transparent;
+    color: #FFD700;
+    text-align: center;
+    font-size: 1.2em;
+    width: 35%;
+    box-shadow: 0 0 3px white;
+    transition: all 0.4s ease-out;
+}
+
+.form-button {
+    margin-left: 32%;
+}
+
+.form-button, footer button {
+    float: left;
+    margin-left: 32%;
+}
+
+button:hover, button:focus {
+    background-color: #FFD700;
+    color: black;
+    box-shadow: 0 0 30px white, inset 0 0 30px white;
+}
+
+label span {
+    margin-left: 3%;
+}
+
+label {
+    display: flex;
+    padding: 1.1%;
+    margin: 1.8% auto;
+    font-size: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+    /*box-shadow: horOffset verOffset shadowWidth color;*/
+    box-shadow: 0 0 2px white;
+    transition: all 0.4s ease-out;
+    flex: 1 2 10em;
+    width: 65%;
+}
+
+label:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px white, inset 0 0 10px white;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 3%;
+    max-height: 20%;
+    border: 1px solid white;
+    border-radius: 25px;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+input:checked {
+    background-color: blue;
+    border: 1px solid blue;
+    box-shadow: 0 0 3px blue;
+}
+
+.feedback-page p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.feedback-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.feedback-text {
+    max-width: 85%;
+    order: 2;
+    flex: 1;
+    margin: 5% 6%;
+}
+
+.feedback-image {
+    order: 1;
+    flex: 1;
+}
+
+.quiz-image {
+    margin-left: 31%;
+}
+
+/* .quiz-image,
+.feedback-image {
+    max-width: 6.5em;
+    height: 5em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+} */
+
+.quiz-image, .feedback-image {
+    max-width: 8.2em;
+    height: 6.2em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+legend {
+    font-size: 1em;
+    flex: 1;
+}
+
+.break:before {
+    content: " ";
+}
+
+@media screen and (orientation: landscape) and (max-width: 699px) {
+    body {
+        background-size: cover;
+        padding-top: 0;
+    }
+    main {
+        margin-top: 0;
+    }
+    .start-logo {
+        max-width: 24%;
+        padding-top: 5%;
+        flex: 0;
+    }
+    .counters {
+        max-width: 15%;
+        font-size: 1em;
+        margin: 1% 5% 0 5%;
+        padding: 0.5%;
+    }
+    .choices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .choices label {
+        flex-basis: 45%;
+        max-width: 40%;
+        padding: 0.5%;
+        margin: 0.7% 4%;
+        font-size: 0.95em;
+    }
+    input {
+        width: 10%;
+        max-height: 90%;
+    }
+    .start-page h1 {
+        font-size: 2.7em;
+    }
+    .start-page p {
+        margin-top: 1%;
+        font-size: 1em;
+    }
+    .start-page h2 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+    .quiz-logo {
+        flex: 0;
+        margin: 3% 5% 0 2%;
+        max-width: 18%;
+    }
+    .quiz-image {
+        visibility: hidden;
+        max-width: 0%;
+        height: 0;
+    }
+    button {
+        font-size: 1.1em;
+        padding: 0.7% 1%;
+    }
+    .form-button {
+        max-width: 5em;
+        margin-left: 66%;
+    }
+    footer button {
+        max-width: 15%;
+        margin-left: 60%;
+    }
+    .feedback-page {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        padding: 0;
+        width: 85%;
+        margin: auto;
+    }
+    .feedback-image {
+        flex: 1;
+        max-width: 30%;
+        height: 6em;
+        order: 2;
+        margin: 3% 5%;
+        padding-top: 1%;
+        padding-bottom: 0;
+    }
+    .feedback-text {
+        max-width: 35%;
+        margin: 0 2%;
+        flex: 1;
+        order: 1;
+        font-size: 0.8em;
+        -webkit-margin-after: 0;
+        -webkit-margin-before: 0;
+    }
+    .results-logo {
+        flex: 2;
+        max-width: 25%;
+        margin: 2% auto;
+        padding: 0;
+    }
+    .results-page {
+        padding: 0 4%;
+        font-size: 0.75em;
+        margin-top: 0.5%;
+    }
+    .break:before {
+        content: " ";
+    }
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        font-size: 1.4em;
+    }
+    .start-logo {
+        padding-top: 2em;
+        max-width: 15em;
+    }
+    footer button, .form-button {
+        margin-left: 42%;
+        width: 15%;
+    }
+    footer button {
+        margin-top: 2.8em;
+    }
+    .quiz-logo {
+        max-width: 10em;
+    }
+    .quiz-image {
+        visibility: visible;
+        max-width: 10em;
+        height: 5.5em;
+        margin-left: 40%;
+    }
+    .feedback-image {
+        max-width: 10em;
+        height: 8em;
+    }
+    .choices label {
+        max-width: 25%;
+        margin: 0.5% auto;
+    }
+    .feedback-text, .feedback-image {
+        padding-top: 2em;
+        margin: 2%;
+    }
+}
+
+@media screen and (min-width: 700px) and (orientation: landscape) {
+    .choices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 10%;
+    }
+    .counters {
+        margin: 1% 15% 0 15%;
+    }
+    .choices label {
+        flex-basis: 45%;
+        max-width: 35%;
+        margin-top: 0.5%;
+        padding: 0.5%;
+        margin-left: 0;
+        font-size: 0.95em;
+    }
+    input {
+        width: 4%;
+        max-height: 90%;
+    }
+    .feedback-page {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+    .feedback-image {
+        flex: 0;
+        order: 2;
+        margin-right: 20%;
+    }
+    .feedback-text {
+        flex: 1;
+        order: 1;
+        margin: 0;
+    }
+    .quiz-logo {
+        margin: auto;
+    }
+    .results-logo {
+        max-width: 25%;
+        padding-top: 5%;
+        padding-bottom: 0;
+    }
+    .results-page {
+        margin: 2%;
+        padding: 0.5%;
+    }
+}
+
+@media screen and (min-width: 700px) and (orientation: portrait) {
+    .feedback-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+    .counters {
+        margin: 1% 15% 0 15%;
+    }
+    .feedback-image {
+        flex: 1;
+        order: 1;
+    }
+    .feedback-text {
+        flex: 1;
+        order: 2;
+    }
+}

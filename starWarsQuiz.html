@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="10 questions with multiple choice answers about the Star Wars movies">
+    <meta name="author" content="Adriana Suarez">
+    <title>Star Wars Quiz</title>
+    <!-- Normalize.css, a cross-browser reset file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Changa+One|Unlock" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <header role="banner">
+        <p class="counters question-counter js-counters hide-it">Question
+            <br>
+            <span class="js-question-counter" data-question-number="1">1</span> /10
+        </p>
+        <img class="js-logo start-logo" src="https://vignette.wikia.nocookie.net/disney/images/2/21/Star_Wars_logo.png/revision/latest?cb=20170909202326"
+            alt="Star Wars">
+        <p class="counters score-counter js-counters hide-it">Score
+            <br>
+            <span class="js-score" data-score="0">0</span>
+        </p>
+    </header>
+
+    <main role="main">
+        <img class="js-quiz-image quiz-image hide-it" src="" alt="">
+        <div class="js-start start-page">
+            <h1>Quiz</h1>
+            <h2>Test your Star Wars knowledge</h2>
+            <p>
+                <i>"May the force be with you"</i>
+            </p>
+        </div>
+        <div class="js-quiz quiz-page hide-it">
+        </div>
+        <div class="js-feedback feedback-page hide-it">
+        </div>
+        <div class="js-results results-page hide-it">
+        </div>
+    </main>
+    <footer class="js-footer-button footer-button">
+        <button role="button" type="button" class="js-start-button">Go!</button>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
