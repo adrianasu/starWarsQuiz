@@ -219,14 +219,6 @@ input:checked {
     margin-left: 31%;
 }
 
-/* .quiz-image,
-.feedback-image {
-    max-width: 6.5em;
-    height: 5em;
-    padding-top: 3%;
-    padding-bottom: 3%;
-} */
-
 .quiz-image, .feedback-image {
     max-width: 8.2em;
     height: 6.2em;
